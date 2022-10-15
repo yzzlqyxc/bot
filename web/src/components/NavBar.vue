@@ -1,17 +1,17 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" herf="#">King Of PSS</a>
+    <router-link class="navbar-brand" :to="{name : 'combat'}">King Of PSS</router-link>
     <div class="collaps navbar-collapse" id = "navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/combat/">对战</a>
+          <router-link class="nav-link active" aria-current="page" :to="{name : 'combat'}">对战</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/record/">对局列表</a>
+          <router-link class="nav-link" :to="{name : 'record'}">对局列表</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/ranklist/">排行榜</a>
+          <router-link class="nav-link" :to="{name : 'ranklist'}">排行榜</router-link>
         </li>
       </ul>
       <ul class="navbar-nav">

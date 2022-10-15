@@ -1,15 +1,13 @@
 <template>
-  <div class="wow">
-    <button type="button" class="btn btn-primary"> 开始对战 </button>
-  </div>
+  <ContentField>对战</ContentField>
 </template>
 
 <script>
-
+  import ContentField from '@/components/ontentField.vue'
+  export default{
+    components: { ContentField }
+}
 </script>
 
 <style scoped>
-div.wow{
-  margin:0px auto;
-}
 </style>
