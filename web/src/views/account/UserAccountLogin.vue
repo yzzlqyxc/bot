@@ -10,7 +10,7 @@
           </div>
           <div class="mb-3">
             <label for="password"  class="form-label">密码</label>
-            <input v-model="password" type="passowrd" class="form-control" id="password" placeholder="请输入密码">
+            <input v-model="password" type="password" class="form-control" id="password" placeholder="请输入密码">
           </div>
           <text style="color: red;"> {{response}} </text>
           <button type="submit" class="btn btn-primary">提交</button>
@@ -26,6 +26,7 @@
   import ContentField from '@/components/ontentField.vue'
   import { useStore } from 'vuex'
   import { ref } from 'vue'
+  import router from '@/router/index';
 
   export default{
     components: { 
@@ -37,17 +38,26 @@
       let password = ref('');
       let response = ref('');
 
+
       const login = () => {
-        console.log(username.value);
-        console.log(store);
         store.dispatch("login", {
           username: username.value,
           password: password.value,
-          sueccess(resp) {
+
+          success(resp) {
             console.log(resp);
+            store.dispatch("getinfo", {
+              success(resp) {
+                router.push({name : 'combat'})
+                console.log(resp);
+                console.log(store.state.user);
+              }
+            })
           },
+
           error(resp) {
             console.log(resp);
+            response.value = "用户名或密码错误"
           }
 
         })

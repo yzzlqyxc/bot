@@ -1,7 +1,8 @@
 import { createStore } from 'vuex'
-import ModuleUser from './user.js'
+import { ModuleUser } from './user';
 
 export default createStore({
+  namespace : false,
   state: {
   },
   getters: {

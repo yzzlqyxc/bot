@@ -22,32 +22,32 @@ public class RegisterServiceImply implements RegisterService {
     public Map<String, String> register(String username, String password, String confirmedPassword) {
         Map<String, String> map = new HashMap<>();
         if(username == null) {
-            map.put("response", "username cannot be empty");
+            map.put("response", "用户名不能为空");
             return map;
         }
         else if(password == null || confirmedPassword == null) {
-            map.put("response", "password cannot be empty");
+            map.put("response", "密码不能为空");
             return map;
         }
         username = username.trim();
         if(username.length() == 0) {
-            map.put("response", "username cannot be empty");
+            map.put("response", "用户名不能为空");
             return map;
         }
         if(password.length() == 0) {
-            map.put("response", "password cannot be empty");
+            map.put("response", "密码不能为空");
             return map;
         }
         if(username.length() > 100) {
-            map.put("response", "the length of username cannot be longer than 100");
+            map.put("response", "用户名长度不能超过100");
             return map;
         }
         if(password.length() > 100) {
-            map.put("response", "the password of username cannot be longer than 100");
+            map.put("response", "密码长度不能超过100");
             return map;
         }
         if(!password.equals(confirmedPassword)) {
-            map.put("response", "The password you have just entered doesn't match");
+            map.put("response", "两次输入的密码不匹配");
             return map;
         }
 
@@ -55,7 +55,7 @@ public class RegisterServiceImply implements RegisterService {
         queryWrapper.eq("usr", username);
         List<User> users = userMapper.selectList(queryWrapper);
         if(!users.isEmpty()) {
-            map.put("response", "The username has been registered");
+            map.put("response", "用户名被注册");
             return map;
         }
 

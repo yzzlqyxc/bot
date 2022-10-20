@@ -1,5 +1,5 @@
 <template>
-  <ContentField>对战列表</ContentField>
+  <ContentField>404 Not Found</ContentField>
 </template>
 
 <script>
