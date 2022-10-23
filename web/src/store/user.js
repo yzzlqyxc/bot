@@ -1,3 +1,4 @@
+import router from '@/router';
 import $ from 'jquery'
 
 export const ModuleUser = {
@@ -46,8 +47,10 @@ export const ModuleUser = {
           confirmedPassword : data.confirmedPassword,
         },
         success(resp) {
-          if(resp.response === "success")
+          if(resp.response === "success") {
             data.success(resp)
+            router.push({name:"user_account_login"});
+          }
           else 
             data.error(resp)
         },

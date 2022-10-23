@@ -12,14 +12,7 @@ import lombok.NoArgsConstructor;
 public class User {
     @TableId(type = IdType.AUTO)
     private Integer id;
-    private String usr;
+    private String username;
     private String password;
     private String photo;
-
-    public String getPassword(){
-        return this.password;
-    }
-    public String getUsername(){
-        return this.usr;
-    }
 }

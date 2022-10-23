@@ -30,7 +30,7 @@ const routes = [
     component : RecordIndexView, 
     name : "record",
     meta:{
-      requestAuth: true,
+      requestAuth: false,
     }
   },
   {

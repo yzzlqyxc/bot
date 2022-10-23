@@ -1,5 +1,6 @@
 import { createStore } from 'vuex'
 import { ModuleUser } from './user';
+import { ModuleCombat } from './combat';
 
 export default createStore({
   namespace : false,
@@ -13,5 +14,6 @@ export default createStore({
   },
   modules: {
     user: ModuleUser,
+    combat : ModuleCombat,
   }
 })

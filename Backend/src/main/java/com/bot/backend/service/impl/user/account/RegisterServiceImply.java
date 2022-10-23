@@ -52,7 +52,7 @@ public class RegisterServiceImply implements RegisterService {
         }
 
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("usr", username);
+        queryWrapper.eq("username", username);
         List<User> users = userMapper.selectList(queryWrapper);
         if(!users.isEmpty()) {
             map.put("response", "用户名被注册");
