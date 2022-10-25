@@ -21,7 +21,6 @@ public class MatchingPool extends Thread{
         MatchingPool.restTemplate = restTemplate;
     }
 
-
     public void addPlayer(Integer userId, Integer rating) {
         lock.lock();
         try {
@@ -80,7 +79,6 @@ public class MatchingPool extends Thread{
                     sendResult(a, b);
                     used[j] = true;
                     used[i] = true;
-                    sendResult(a, b);
                 }
             }
         }
@@ -96,7 +94,6 @@ public class MatchingPool extends Thread{
     @Override
     public void run() {
         while(true) {
-
             try {
                 Thread.sleep(1000);
                 lock.lock();

@@ -39,6 +39,7 @@ public class GetRecentCombatServiceImply implements GetRecentCombatService {
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
             String  time = format.format(date);
             map.put("time", time);
+            map.put("score", i.getScore());
             response.add(map);
         }
 

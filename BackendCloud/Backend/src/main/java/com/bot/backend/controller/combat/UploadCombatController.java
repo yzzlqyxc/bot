@@ -22,8 +22,9 @@ public class UploadCombatController {
     Map<String, String> upLoadCombatController(@RequestParam Map<String, String>map ) throws ParseException {
         int winner = Integer.parseInt(map.get("winner"));
         int loser = Integer.parseInt(map.get("loser"));
+        String score = map.get("score");
 
         Date d = new Date();
-        return uploadCombatService.upLoadCombat(winner, loser, d);
+        return uploadCombatService.upLoadCombat(winner, loser, d, score);
     }
 }

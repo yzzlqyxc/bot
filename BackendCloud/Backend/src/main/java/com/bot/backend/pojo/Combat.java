@@ -12,4 +12,5 @@ public class Combat {
     public int winner;
     public int loser;
     public Date time;
+    public String score;
 }

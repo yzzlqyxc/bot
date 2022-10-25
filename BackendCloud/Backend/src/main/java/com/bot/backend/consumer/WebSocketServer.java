@@ -1,7 +1,7 @@
 package com.bot.backend.consumer;
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONObject;
-import com.bot.backend.config.WebSocketConfig;
+import com.bot.backend.GameRelate.Game;
 import com.bot.backend.consumer.utils.JwtAuthentication;
 import com.bot.backend.mapper.UserMapper;
 import com.bot.backend.pojo.User;
@@ -9,14 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
-import org.springframework.util.MultiValueMapAdapter;
 import org.springframework.web.client.RestTemplate;
 
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
-import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Component
@@ -25,6 +23,7 @@ public class WebSocketServer {
     private static ConcurrentHashMap<Integer, WebSocketServer> users = new ConcurrentHashMap<>();
     private Session session = null;
     private User user;
+    private Game game;
     private static UserMapper userMapper;
     private static RestTemplate restTemplate;
 
@@ -68,6 +67,7 @@ public class WebSocketServer {
 
     public static void startGame(Integer aId, Integer bId) {
         User a = userMapper.selectById(aId), b = userMapper.selectById(bId);
+        Game game = new Game(a.getId(), b.getId());
         JSONObject respA = new JSONObject();
         JSONObject respB = new JSONObject();
 
@@ -85,8 +85,51 @@ public class WebSocketServer {
 
         users.get(a.getId()).sendMessage(respA.toJSONString());
         users.get(b.getId()).sendMessage(respB.toJSONString());
+        users.get(a.getId()).game = game;
+        users.get(b.getId()).game = game;
     }
 
+    public static void sendTempResult(Integer aId, Integer bId, Integer aScore, Integer bScore, Integer winner) {
+        User a = userMapper.selectById(aId), b = userMapper.selectById(bId);
+        JSONObject respA = new JSONObject();
+        JSONObject respB = new JSONObject();
+
+        respA.put("event", "little_match_over");
+        respB.put("event", "little_match_over");
+
+        respA.put("winner", winner.toString());
+        respB.put("winner", winner.toString());
+
+        respA.put("your_score", aScore.toString());
+        respB.put("your_score", bScore.toString());
+
+        respA.put("your_opponent_score", bScore.toString());
+        respB.put("your_opponent_score", aScore.toString());
+
+        users.get(a.getId()).sendMessage(respA.toJSONString());
+        users.get(b.getId()).sendMessage(respB.toJSONString());
+    }
+
+    public static void sendFinishMessage(Integer aId, Integer bId, Integer aScore, Integer bScore, Integer winner) {
+        User a = userMapper.selectById(aId), b = userMapper.selectById(bId);
+        JSONObject respA = new JSONObject();
+        JSONObject respB = new JSONObject();
+
+        respA.put("event", "match_over");
+        respB.put("event", "match_over");
+
+        respA.put("final_winner", winner.toString());
+        respB.put("final_winner", winner.toString());
+
+        respA.put("your_score", aScore.toString());
+        respB.put("your_score", bScore.toString());
+
+        respA.put("your_opponent_score", bScore.toString());
+        respB.put("your_opponent_score", aScore.toString());
+
+        users.get(a.getId()).sendMessage(respA.toJSONString());
+        users.get(b.getId()).sendMessage(respB.toJSONString());
+    }
 
     @OnClose
     public void onClose() {
@@ -109,6 +152,14 @@ public class WebSocketServer {
         }
         else if("end_matching".equals(event)) {
             closeMatching();
+        }
+        else if("choose".equals(event)) {
+            Integer choose = Integer.parseInt(msg.getString("choose"));
+            System.out.println("player" + user.getId() + "choose" + choose);
+            if(game.A.userId.equals(user.getId())){
+                game.A.setChoose(choose);
+            }
+            else game.B.setChoose(choose);
         }
 
     }

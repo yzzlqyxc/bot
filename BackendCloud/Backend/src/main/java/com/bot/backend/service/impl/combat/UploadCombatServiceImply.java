@@ -16,8 +16,8 @@ public class UploadCombatServiceImply implements UploadCombatService {
     CombatMapper combatMapper;
 
     @Override
-    public Map<String, String> upLoadCombat(int winner, int loser, Date time) {
-        Combat combat = new Combat(winner, loser, time);
+    public Map<String, String> upLoadCombat(int winner, int loser, Date time, String score) {
+        Combat combat = new Combat(winner, loser, time, score);
         combatMapper.insert(combat);
         Map<String, String> response = new HashMap<>();
         response.put("response", "success");
