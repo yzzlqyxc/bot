@@ -40,4 +40,13 @@ export default{
 </script>
 
 <style scoped>
+h2 {
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+td {
+  text-align: center;
+}
 </style>

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2022-10-24T05:12:59.716+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/player/del/"
+}

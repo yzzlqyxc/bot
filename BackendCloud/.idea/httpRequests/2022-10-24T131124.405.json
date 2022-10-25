@@ -1,0 +1,6 @@
+{
+  "timestamp": "2022-10-24T05:11:24.360+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/player/add/"
+}

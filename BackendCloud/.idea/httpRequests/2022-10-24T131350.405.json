@@ -1,0 +1,6 @@
+{
+  "timestamp": "2022-10-24T05:13:50.541+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/player/del/"
+}

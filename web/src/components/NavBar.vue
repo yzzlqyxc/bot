@@ -5,13 +5,13 @@
     <div class="collaps navbar-collapse" id = "navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <router-link class="nav-link active" aria-current="page" :to="{name : 'combat'}">对战</router-link>
+          <router-link :class="route_name == 'combat' ? 'nav-link active' : 'nav-link'" aria-current="page" :to="{name : 'combat'}">对战</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" :to="{name : 'record'}">对局列表</router-link>
+          <router-link :class="route_name == 'record' ? 'nav-link active' : 'nav-link'" :to="{name : 'record'}">对局列表</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" :to="{name : 'ranklist'}">排行榜</router-link>
+          <router-link :class="route_name == 'ranklist' ? 'nav-link active' : 'nav-link'" :to="{name : 'ranklist'}">排行榜</router-link>
         </li>
       </ul>
 
@@ -21,8 +21,7 @@
             {{$store.state.user.username}}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">我的bot</a>
-            <div class="dropdown-divider"></div>
+            <!-- <div class="dropdown-divider"></div> -->
             <a class="dropdown-item" @click="logout" href="#">退出</a>
           </div>
         </li>

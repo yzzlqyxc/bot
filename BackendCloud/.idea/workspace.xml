@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a56952e7-77e5-4e49-82f9-7470e3dd032e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/consumer/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/consumer/utils/JwtAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/controller/ranklist/GetRankListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/service/combat/GetRankListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/service/impl/combat/GetRankListServiceImply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-10-24T131124.405.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-10-24T131259.405.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-10-24T131259.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-10-24T131336.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-10-24T131350.405.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/BackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/config/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/consumer/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/consumer/utils/JwtAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/controller/combat/GetRecentCombatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/controller/combat/UploadCombatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/controller/ranklist/GetRankListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/controller/usr/UsrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/controller/usr/account/InfoServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/controller/usr/account/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/controller/usr/account/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/mapper/CombatMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/pojo/Combat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/combat/GetRankListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/combat/GetRecentCombatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/combat/UploadCombatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/impl/combat/GetRankListServiceImply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/impl/combat/GetRecentCombatServiceImply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/impl/combat/UploadCombatServiceImply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/impl/user/account/InfoServiceImply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/impl/user/account/LoginServiceImply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/impl/user/account/RegisterServiceImply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/impl/utils/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/user/account/InfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/user/account/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/service/user/account/RegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bot/backend/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/templates/pk/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/test/java/com/bot/backend/BackendApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MachingSystem/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MachingSystem/src/main/java/com/kop/machingsystem/MatchingSystemApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MachingSystem/src/main/java/com/kop/machingsystem/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MachingSystem/src/main/java/com/kop/machingsystem/controller/MachingServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MachingSystem/src/main/java/com/kop/machingsystem/service/MachingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MachingSystem/src/main/java/com/kop/machingsystem/service/impl/MatchingServiceImply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MachingSystem/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/controller/usr/UsrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/controller/usr/UsrController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/service/impl/user/account/RegisterServiceImply.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/com/bot/backend/service/impl/user/account/RegisterServiceImply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../web/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/components/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/store/combat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/store/combat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/views/combat/CombatIndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/combat/CombatIndexView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/views/ranklist/RanklistIndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/ranklist/RanklistIndexView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/views/record/RecordIndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/views/record/RecordIndexView.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GZBEF7KT3MkjLHOK8cH3cswuQ9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/language/Nine Sun Fight/Bot/BackendCloud&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;888cc265802870749ea10c65287acaf5&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\language\Nine Sun Fight\Bot\BackendCloud\MachintSystem\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.kop.machingsystem.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kop.machingsystem.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
+    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bot.backend.BackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatchingSystemApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="MachintSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kop.machingsystem.MatchingSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatchingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="MachingSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kop.machingsystem.MatchingSystemApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kop.machingsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MatchingSystemApplication" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="HTTP Request.All in generated-requests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a56952e7-77e5-4e49-82f9-7470e3dd032e" name="Changes" comment="" />
+      <created>1666586111510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666586111510</updated>
+      <workItem from="1666586112818" duration="2403000" />
+      <workItem from="1666598560075" duration="449000" />
+      <workItem from="1666620275093" duration="3072000" />
+      <workItem from="1666663945465" duration="7175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

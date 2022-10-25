@@ -1,0 +1,30 @@
+GET http://localhost:3001/player/del/
+
+<> 2022-10-24T131350.405.json
+
+###
+
+POST http://localhost:3001/player/del/
+
+<> 2022-10-24T131336.500.json
+
+###
+
+GET http://localhost:3001/player/del/
+
+<> 2022-10-24T131259.500.json
+
+###
+
+POST http://localhost:3001/player/add/
+
+<> 2022-10-24T131259.405.json
+
+###
+
+POST http://localhost:3001/player/add/
+
+<> 2022-10-24T131124.405.json
+
+###
+

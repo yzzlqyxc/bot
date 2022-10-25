@@ -16,7 +16,7 @@ export const ModuleCombat = {
   actions: {
     uploadCombat(context, data) {
       $.ajax({
-        url: "http://localhost:2999/combat/upload/",
+        url: "http://localhost:3000/combat/upload/",
         type: "POST",
         data: {
           winner : data.winner,
@@ -40,7 +40,6 @@ export const ModuleCombat = {
         },
         success(resp) {
           context.commit("updateCombat", resp);          
-          console.log(resp);
         },
         error(resp) {
           console.log(resp);
